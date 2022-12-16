@@ -13,16 +13,33 @@
 # # Напишите программу, которая принимает на вход координаты точки (X и Y), причём X ≠ 0 и Y ≠ 0 и выдаёт номер четверти плоскости,
 # в которой находится эта точка (или на какой оси она находится).
 
-x = int(input("input x: "))
-y = int(input("input y: "))
+# x = int(input("input x: "))
+# y = int(input("input y: "))
 
-if x>0 and y>0:
-    print("first quarter")
-elif x<0 and y>0:
-    print("second quarter")
-elif x<0 and Y<0:
-    print("third quarter")
-elif x>0 and y<0:
-    print("fourth quarter")
+# if x>0 and y>0:
+#     print("first quarter")
+# elif x<0 and y>0:
+#     print("second quarter")
+# elif x<0 and Y<0:
+#     print("third quarter")
+# elif x>0 and y<0:
+#     print("fourth quarter")
+# else:
+#     print("error")
+
+
+
+#Напишите программу, которая по заданному номеру четверти, показывает диапазон возможных координат точек в этой четверти (x и y).
+x = int(input("enter quarter number: "))
+
+
+if x==1:
+    print(f"by x from 0 to plus infinity", f"by y from 0 to plus infinity", sep="\n")
+elif x==2:
+    print(f"by x from 0 to minus infinity", f"by y from 0 to plus infinity", sep="\n")
+elif x==3:
+    print(f"by x from 0 to minus infinity", f"by y from 0 to minus infinity", sep="\n")
+elif x==4:
+    print(f"by x from 0 to plus infinity", f"by y from 0 to minus infinity", sep="\n")
 else:
     print("error")
