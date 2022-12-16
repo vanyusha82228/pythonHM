@@ -30,16 +30,26 @@
 
 
 #Напишите программу, которая по заданному номеру четверти, показывает диапазон возможных координат точек в этой четверти (x и y).
-x = int(input("enter quarter number: "))
+# x = int(input("enter quarter number: "))
 
 
-if x==1:
-    print(f"by x from 0 to plus infinity", f"by y from 0 to plus infinity", sep="\n")
-elif x==2:
-    print(f"by x from 0 to minus infinity", f"by y from 0 to plus infinity", sep="\n")
-elif x==3:
-    print(f"by x from 0 to minus infinity", f"by y from 0 to minus infinity", sep="\n")
-elif x==4:
-    print(f"by x from 0 to plus infinity", f"by y from 0 to minus infinity", sep="\n")
-else:
-    print("error")
+# if x==1:
+#     print(f"by x from 0 to plus infinity", f"by y from 0 to plus infinity", sep="\n")
+# elif x==2:
+#     print(f"by x from 0 to minus infinity", f"by y from 0 to plus infinity", sep="\n")
+# elif x==3:
+#     print(f"by x from 0 to minus infinity", f"by y from 0 to minus infinity", sep="\n")
+# elif x==4:
+#     print(f"by x from 0 to plus infinity", f"by y from 0 to minus infinity", sep="\n")
+# else:
+#     print("error")
+
+
+#Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 2D пространстве
+
+xA = int(input("enter the x coordinate of the first point: "))
+yA = int(input("enter the y coordinate of the first point: "))
+xB = int(input("enter the x coordinate of the second point: "))
+yB = int(input("enter the y coordinate of the second point: "))
+
+print(f"Distance between points ({xA},{yA}) and ({xB},{yB}) is {round(((xA-xB)**2 + (yA-yB)**2)**0.5, 3)}")
