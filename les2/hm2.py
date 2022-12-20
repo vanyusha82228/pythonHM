@@ -3,17 +3,33 @@
 # пусть N = 4, тогда [ 1, 2, 6, 24 ] (1, 1*2, 1*2*3, 1*2*3*4)
 
 
+# n = int(input("input n: "))
+
+# def fact(n):
+#     if n==1:
+#         return 1
+#     else:
+#         return fact(n-1)*n
+
+# list = []
+
+# for i in range(1,n+1):
+#     list.append(fact(i))
+
+# print(list)
+
+
+
+# Требуется найти наименьший натуральный делитель целого числа N, отличный от 1.
+# Пример:
+# Для n = 15: Ответ: 3
+# Для n = 35: Ответ: 5
+
+
 n = int(input("input n: "))
 
-def fact(n):
-    if n==1:
-        return 1
-    else:
-        return fact(n-1)*n
-
-list = []
-
-for i in range(1,n+1):
-    list.append(fact(i))
-
-print(list)
+for i  in range(2,n+1):
+    if n % i==0:
+        print(i)
+        break
+    
