@@ -26,10 +26,38 @@
 # Для n = 35: Ответ: 5
 
 
-n = int(input("input n: "))
+# n = int(input("input n: "))
 
-for i  in range(2,n+1):
-    if n % i==0:
-        print(i)
-        break
+# for i  in range(2,n+1):
+#     if n % i==0:
+#         print(i)
+#         break
     
+
+#  Задайте список из (2*N+1) элементов, заполненных числами из промежутка [-N, N].
+# Найдите произведение элементов на указанных ИНДЕКСАХ. Пять ИНДЕКСОВ хранятся в списке, который вы сами заполняете.
+
+# Пример списка ИНДЕКСОВ [2, 2, 3, 1, 8]
+
+# Ввод: 4
+# [-4, -3, -2, -1, 0, 1, 2, 3,4]   
+
+
+n = abs(int(input("Input n: ")))
+
+
+numberOfIndex = 5
+listOfIndex =[]
+for i in range(numberOfIndex):
+    listOfIndex.append(int(input(f'Enter the {i+1} element: ')))
+print(listOfIndex)
+
+list = []
+for i in range(-n,n+1):
+    list.append(i)
+print(list)
+res = 1
+for i in listOfIndex:
+    res*= list[i]
+
+print(f"answer: {res}")
