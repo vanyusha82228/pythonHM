@@ -43,21 +43,33 @@
 # [-4, -3, -2, -1, 0, 1, 2, 3,4]   
 
 
-n = abs(int(input("Input n: ")))
+# n = abs(int(input("Input n: ")))
 
 
-numberOfIndex = 5
-listOfIndex =[]
-for i in range(numberOfIndex):
-    listOfIndex.append(int(input(f'Enter the {i+1} element: ')))
-print(listOfIndex)
+# numberOfIndex = 5
+# listOfIndex =[]
+# for i in range(numberOfIndex):
+#     listOfIndex.append(int(input(f'Enter the {i+1} element: ')))
+# print(listOfIndex)
 
-list = []
-for i in range(-n,n+1):
-    list.append(i)
-print(list)
-res = 1
-for i in listOfIndex:
-    res*= list[i]
+# list = []
+# for i in range(-n,n+1):
+#     list.append(i)
+# print(list)
+# res = 1
+# for i in listOfIndex:
+#     res*= list[i]
 
-print(f"answer: {res}")
+# print(f"answer: {res}")
+
+# Требуется посчитать сумму чётных чисел, расположенных между числами 1 и N включительно.
+
+
+n = abs(int(input("inpyt n: ")))
+sum=0
+
+for i in range(1,n+1):
+    if i%2==0:
+        sum=sum+i
+
+print(sum)
