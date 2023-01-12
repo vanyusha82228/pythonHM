@@ -68,14 +68,14 @@
 # - 3 -> 11
 # - 2 -> 10
 
-s=""
+# s=""
  
-n =int(input("Input n: "))
+# n =int(input("Input n: "))
 
-while n!=0 :
-    s = str(n%2)+s
-    n//=2
-print(s)
+# while n!=0 :
+#     s = str(n%2)+s
+#     n//=2
+# print(s)
 
 
 

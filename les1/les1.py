@@ -47,9 +47,9 @@
 
 #Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 2D пространстве
 
-xA = int(input("enter the x coordinate of the first point: "))
-yA = int(input("enter the y coordinate of the first point: "))
-xB = int(input("enter the x coordinate of the second point: "))
-yB = int(input("enter the y coordinate of the second point: "))
+# xA = int(input("enter the x coordinate of the first point: "))
+# yA = int(input("enter the y coordinate of the first point: "))
+# xB = int(input("enter the x coordinate of the second point: "))
+# yB = int(input("enter the y coordinate of the second point: "))
 
-print(f"Distance between points ({xA},{yA}) and ({xB},{yB}) is {round(((xA-xB)**2 + (yA-yB)**2)**0.5, 3)}")
+# print(f"Distance between points ({xA},{yA}) and ({xB},{yB}) is {round(((xA-xB)**2 + (yA-yB)**2)**0.5, 3)}")
