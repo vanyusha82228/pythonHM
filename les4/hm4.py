@@ -74,6 +74,5 @@ def get_polynomial(pow):
     return string + str(rand.randint(1, 99)) + 'x + ' + str(rand.randint(1, 99))
 
 
-k = input('Введите степень: ')
-k = int(k)
+k = int(input('Введите степень: '))
 print(get_polynomial(k))
